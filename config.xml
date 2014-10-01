@@ -32,7 +32,7 @@
   <icon src="icons/ios/VG-icon-ipad2.png" gap:platform="ios" width="152" height="152" />
   <gap:splash src="splash.png" />
   <gap:splash gap:platform="ios" height="480" src="res/screen/ios/splash-for-logapp-iphone.png" width="320" />
-  <gap:splash gap:platform="ios" height="960" src="res/screen/ios/splash-for-logapp-iphone2x.png" width="640" />
+  <gap:splash gap:platform="ios" height="1136" src="res/screen/ios/splash-for-logapp-iphone2x.png" width="640" />
   <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/splash-for-logapp-ipad.png" width="768" />
   <gap:splash gap:platform="ios" height="768" src="res/screen/ios/splash-for-logapp-ipad-landscape.png" width="1024" />
 
