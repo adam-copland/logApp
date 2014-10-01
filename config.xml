@@ -5,9 +5,9 @@
         versionCode="10"
         version   = "1.0">
   <!-- versionCode is optional and Android only -->
-  <name>Log Application</name>
+  <name>Logging System</name>
   <description>
-    Logging System App
+    Logging System App for Drive Computer Services Ltd
   </description>
   <author href="http://www.drivecomputing.co.uk" email="adam.copland@drivecomputing.co.uk">
     Drive Computer Services Ltd
