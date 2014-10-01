@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test App</title>
+        <link rel='stylesheet' href='jquery/customLogApp.min.css'>
+        <link rel='stylesheet' href='jquery/jquery.mobile.structure-1.4.4.min.css'>
+        <link rel='stylesheet' href='jquery/jquery.mobile.icons.min.css'>
+        <script type='text/javascript' src='jquery/jquery.min.js'></script>
+        <script type='text/javascript' src='jquery/jquery.mobile-1.4.4.min.js'></script>
+        <script type='text/javascript'>
+            
+        </script>
+        <style type="text/css">
+            #header
+            {
+                text-align:center;
+            }
+            #footer
+            {
+                position:fixed;
+                bottom:0;
+                width:100%;
+                font-size:12px;
+                text-align:center;
+            }
+            #content
+            {
+                margin-top:25%;
+            }
+            #newLogBtn
+            {
+                width:45%;
+                float:left;
+            }
+            #existLogBtn
+            {
+                width:45%;
+                float:right;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" data-theme="d">
+            <div id='header' class='ui-bar' data-role="header">
+                Logging System
+            </div>
+            <div id='content' data-role='content'>
+                <a href='#' onClick='loginClicked();' data-role='button' data-mini='true' id='newLogBtn'>Create new log</a>
+                <a href='#' onClick='loginClicked();' data-role='button' data-mini='true' id='existLogBtn'>Search existing logs</a>
+                <hr style='margin-top:15%;width:75%;'>
+                <center><div style='width:40%;margin-top:8%;'><input type='text' id='logNumberInput' placeholder='Log number...'></div></center>
+            </div>
+            <div data-role='footer' id='footer' class='ui-bar'>Drive Computer Services Ltd | All rights reserved &copy;</div>
+        </div>
+    </body>
+</html>
