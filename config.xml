@@ -5,7 +5,7 @@
         versionCode="10"
         version   = "1.0">
   <!-- versionCode is optional and Android only -->
-  <name>Logging System</name>
+  <name>Fault Log</name>
   <description>
     Logging System App for Drive Computer Services Ltd
   </description>
