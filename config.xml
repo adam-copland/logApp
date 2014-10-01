@@ -4,23 +4,18 @@
         id        = "com.drivecomputing.loggingsystem"
         versionCode="10"
         version   = "1.0">
-
   <!-- versionCode is optional and Android only -->
-
   <name>Log Application</name>
-
   <description>
     Logging System App
   </description>
-
   <author href="http://www.drivecomputing.co.uk" email="adam.copland@drivecomputing.co.uk">
     Drive Computer Services Ltd
   </author>
-
   <preference name="phonegap-version" value="3.5.0" />
   <preference name="detect-data-types" value="true" />
   <preference name="exit-on-suspend" value="true" />
-  <preference name="splash-screen-duration" value="3000" />
+  <preference name="splash-screen-duration" value="1000" />
   <preference name="webviewbounce" value="false" />
   <icon src="icons/ios/VG-icon-57.png" />
   <icon src="icons/ios/VG-icon-57.png" gap:platform="ios" width="57" height="57" />
@@ -35,14 +30,11 @@
   <gap:splash gap:platform="ios" height="1136" src="res/screen/ios/splash-for-logapp-iphone2x.png" width="640" />
   <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/splash-for-logapp-ipad.png" width="768" />
   <gap:splash gap:platform="ios" height="768" src="res/screen/ios/splash-for-logapp-ipad-landscape.png" width="1024" />
-
   <plugin name="Storage" value="org.apache.cordova.Storage" />
   <feature id="blackberry.widgetcache" required="true" version="1.0.0.0" />
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/file"/>
-
   <!-- <gap:plugin name="BarcodeScanner" /> --> <!-- latest release -->
   <gap:plugin name="com.phonegap.plugins.barcodescanner" /> <!-- latest release -->
-
 </widget>
