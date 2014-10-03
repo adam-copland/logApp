@@ -36,10 +36,12 @@
             #userName
             {
                 width:60%;
+                text-align:center;
             }
             #passWord
             {
                 width:60%;
+                text-align:center;
             }
             #loginBtn
             {
@@ -48,6 +50,7 @@
             #content
             {
                 width:60%;
+                margin-top:-10%;
             }
         </style>
 </head>
@@ -56,12 +59,14 @@
             <div id='header' class='ui-bar' data-role="header">
                 Logging System
             </div>
+        <br>
+        <br>
         <center>
             <div id='content' data-role='content'>
                 <div id='label'>Please enter the requested details</div>
                 <hr style='width:80%;'>
                 <center><input type='text' id='userName' placeholder='Username...'></center>
-                <center><input type='password' id='passWord' placeholder='Password...'></center>
+                <center><input type='text' id='passWord' placeholder='Password...'></center>
                 <hr style='width:80%;'>
                 <center><a href='#' onClick='loginClicked();' data-role='button' data-mini='true' id='loginBtn'>Login</a></center>
             </div>
