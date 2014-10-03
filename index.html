@@ -8,29 +8,32 @@
     <script type='text/javascript' src='jquery/jquery.min.js'></script>
     <script type='text/javascript' src='jquery/jquery.mobile-1.4.4.min.js'></script>
         <script type='text/javascript'>
-            var passWord = 0;
-            var errMsg = "Incorrect password, please try again.";
-            $(document).ready(function()
-            {  
-                if (e.keyPress == 13) {
-                    loginClicked;
-                }
-            });
-            function loginClicked()
+            function doLogin()
             {
-                passWord = $('#passWord').val();
-                checkPassword();
-            }
-            function checkPassword()
-            {
-                if(passWord == "drive")
-                {
-                    document.location.href="page1.html";
-                }
-                else
-                {
-                    alert(errMsg);
-                }
+                document.location.href='page1.html';
+                var userName = $('#userName').val();
+                var password = $('#password').val();
+                
+                $.ajax ({
+                            url:'http://www.support.drivecomputing.co.uk/w99a66qr_ajax.php',
+                            cache:false,
+                            data: {'request': 'validateSettings', 'userName' : userName, 'password' : password},
+                            dataType: 'json',
+                            success: function(data)
+                              {
+                                  alert('hello');
+                                  $('#errMsg').html(data.errMsg);
+                                  
+                                  if (data.errMsg == "")
+                                  {
+                                      alert('Login Successful!');
+                                  }
+                                  else
+                                  {
+                                      $('#errMsg').html(data.errMsg);
+                                  }
+                              }
+                            });
             }
         </script>
         <style type="text/css">
@@ -51,7 +54,11 @@
                 text-align:center;
                 margin-top:150px;
             }
-            #passWord
+            #userName
+            {
+                text-align:center;
+            }
+            #password
             {
                 text-align:center;
             }
@@ -77,11 +84,13 @@
             <div id='content' data-role='content'>
                 <div id='label'>Please enter the requested details</div>
                 <hr style='width:80%;'>
-                <center><input type='password' id='passWord' placeholder='Password...'></center>
+                <center><input type='text' id='userName' placeholder='Username...'></center>
+                <center><input type='password' id='password' placeholder='Password...'></center>
                 <hr style='width:80%;'>
-                <center><a href='#' onClick='loginClicked();' data-role='button' data-mini='true' id='loginBtn'>Login</a></center>
+                <center><a href='#' onClick='doLogin();' data-role='button' data-mini='true' id='loginBtn'>Login</a></center>
             </div>
         </center>
+        <div id="errMsg"></div>
         <div data-role='footer' id='footer' class='ui-bar'><div style='margin-left:-6%;'>Drive Computer Services Ltd | All rights reserved &copy;</div></div>
     </div>
 </body>

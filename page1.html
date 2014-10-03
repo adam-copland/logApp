@@ -40,12 +40,19 @@
                 width:35%;
                 float:right;
             }
+            #backBtn
+            {
+                float:left;
+                margin-top:-35px;
+            }
         </style>
     </head>
     <body>
         <div data-role="page" data-theme="d">
-            <div id='header' class='ui-bar' data-role="header">
-                Log Enquiry
+            <div data-role="header" id='header' class='ui-bar'>
+                <div style='margin-top:15px;'>Log Enquiry</div>
+                <div id='backBtn'><input type='button' data-mini='true' data-icon='back' value='Back'></div>
+                
             </div>
             <div id='content' data-role='content'>
                 <a href='#' onClick='createLog();' data-role='button' data-mini='true' id='newLogBtn'>Create new</a>
