@@ -8,10 +8,7 @@
         <script type='text/javascript' src='jquery/jquery.min.js'></script>
         <script type='text/javascript' src='jquery/jquery.mobile-1.4.4.min.js'></script>
         <script type='text/javascript'>
-            function createLog()
-            {
-                document.location.href="newLog.html";
-            }
+            
         </script>
         <style type="text/css">
             #header
@@ -30,28 +27,16 @@
             {
                 margin-top:25%;
             }
-            #newLogBtn
-            {
-                width:35%;
-                float:left;
-            }
-            #existLogBtn
-            {
-                width:35%;
-                float:right;
-            }
         </style>
     </head>
     <body>
         <div data-role="page" data-theme="d">
             <div id='header' class='ui-bar' data-role="header">
-                Log Enquiry
+                Create Log
             </div>
             <div id='content' data-role='content'>
-                <a href='#' onClick='createLog();' data-role='button' data-mini='true' id='newLogBtn'>Create new</a>
-                <a href='#' onClick='loginClicked();' data-role='button' data-mini='true' id='existLogBtn'>Search existing</a>
-                <hr style='margin-top:25%;width:75%;'>
-                <center><div style='width:40%;margin-top:8%;'><input type='text' id='logNumberInput' placeholder='Log number...'></div></center>
+                
+                
             </div>
             <div data-role='footer' id='footer' class='ui-bar'><div style='margin-left:-5%;'>Drive Computer Services Ltd | All rights reserved &copy;</div></div>
         </div>
