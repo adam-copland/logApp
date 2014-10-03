@@ -25,12 +25,8 @@
             }
             #content
             {
-                width:60%;
-                margin-top:15%;
-            }
-            #createLogBtn
-            {
-                width:40%;;
+                width:95%;
+                margin-top:12.5%;
             }
         </style>
     </head>
@@ -40,75 +36,58 @@
                 Create Log
             </div>
             
-            <center><div id='content' data-role='content'>
-                    <label style='margin-top:-8%;'>Please choose information as appropriate</label>
+            <div id='content' data-role='content'>
+                <center><label style='margin-top:-5%;'>Please choose information as appropriate</label></center>
                     <hr>
-                    <label>Customer Code</label>
-                    <select data-mini='true'>
-                        <option>
-                            Please Select
-                        </option>
-                        <option>
-                            01 : D & H
-                        </option>
-                        <option>
-                            02 : Macphie
-                        </option>
-                        <option>
-                            03 : Norsea
-                        </option>
-                        <option>
-                            04 : Kesslers
-                        </option>
-                        <option>
-                            05 : Lambsons
-                        </option>
-                    </select> 
+                    <div style='width:32%;'> <input type='text' id='referenceNumber' placeholder='Reference...'></div>
+                    <hr>
+                    <div>
+                        <div style='float:left;'><label>Status : </label></div>
+                        <div style='width:55%; margin-left:20%;'>
+                            <select data-mini='true'>
+                                <option>
+                                    Please Select
+                                </option>
+                                <option>
+                                    Open
+                                </option>
+                                <option>
+                                    Closed
+                                </option>
+                            </select>
+                        </div>
+                    </div>
                     <br>
                 <hr>
-                <label>Select Product</label>
+                <label></label>
                 <select data-mini='true'>
                     <option>
-                        Please Select
                     </option>
                     <option>
-                        Bliss
                     </option>
                     <option>
-                        Marpacs
                     </option>
                     <option>
-                        SAP Business One
                     </option>
                 </select>
                 <br>
-                <label>Select Log Type</label>
+                <label></label>
                 <select data-mini='true'>
                     <option>
-                        Please Select
                     </option>
                     <option>
-                        Customer Project
                     </option>
                     <option>
-                        Helpdesk Log
                     </option>
                     <option>
-                        Release Notes
                     </option>
                     <option>
-                        Site Log
                     </option>
                     <option>
-                        Other
                     </option>
                 </select>
-                <hr>
-                <br>
-                <a href='#' onClick='' data-role='button' data-mini='true' id='createLogBtn'>Create Log</a>
             </div>
-            </center>
-            <div data-role='footer' id='footer' class='ui-bar'><div style='margin-left:-5%;'>Drive Computer Services Ltd | All rights reserved &copy;</div></div>
+            <div data-role='footer' id='footer' class='ui-bar'><div style='margin-left:-6%;'>Drive Computer Services Ltd | All rights reserved &copy;</div></div>
         </div>
     </body>
 </html>
