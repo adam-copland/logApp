@@ -25,7 +25,7 @@
             }
             #content
             {
-                width:95%;
+                width:90%;
                 margin-top:12.5%;
             }
         </style>
@@ -35,15 +35,14 @@
             <div id='header' class='ui-bar' data-role="header">
                 Create Log
             </div>
-            
             <div id='content' data-role='content'>
                 <center><label style='margin-top:-5%;'>Please choose information as appropriate</label></center>
-                    <hr>
+                <hr>
                     <div style='width:32%;'> <input type='text' id='referenceNumber' placeholder='Reference...'></div>
                     <hr>
                     <div>
-                        <div style='float:left;'><label>Status : </label></div>
-                        <div style='width:55%; margin-left:20%;'>
+                        <div style='float:left;margin-top:2.5%;'><label>Status : </label></div>
+                        <div style='width:55%; margin-left:22.5%;'>
                             <select data-mini='true'>
                                 <option>
                                     Please Select
@@ -57,7 +56,35 @@
                             </select>
                         </div>
                     </div>
-                    <br>
+                    <hr>
+                    <div>
+                        <div style='float:left;margin-top:2.5%;'><label>Category : </label></div>
+                        <div style='width:55%; margin-left:29%;'>
+                            <select data-mini='true'>
+                                <option>
+                                    Please Select
+                                </option>
+                                <option>
+                                    A : High Severity
+                                </option>
+                                <option>
+                                    B : Medium Severity
+                                </option>
+                                <option>
+                                    C : Low Severity
+                                </option>
+                                <option>
+                                    D : Query
+                                </option>
+                                <option>
+                                    U : Awaiting Upgrade
+                                </option>
+                                <option>
+                                    X : Development
+                                </option>
+                            </select>
+                        </div>
+                    </div>
                 <hr>
                 <label></label>
                 <select data-mini='true'>
