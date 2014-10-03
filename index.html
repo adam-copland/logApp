@@ -1,18 +1,36 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test App</title>
+    <title>Logging System</title>
     <link rel='stylesheet' href='jquery/customLogApp.min.css'>
     <link rel='stylesheet' href='jquery/jquery.mobile.structure-1.4.4.min.css'>
     <link rel='stylesheet' href='jquery/jquery.mobile.icons.min.css'>
     <script type='text/javascript' src='jquery/jquery.min.js'></script>
     <script type='text/javascript' src='jquery/jquery.mobile-1.4.4.min.js'></script>
         <script type='text/javascript'>
+            var passWord = 0;
+            var errMsg = "Incorrect password, please try again.";
+            $(document).ready(function()
+            {  
+                if (e.keyPress == 13) {
+                    loginClicked;
+                }
+            });
             function loginClicked()
             {
-                var userName = $('#userName').val();
-                var passWord = $('#passWord').val();
-                alert ("Username is: " + userName + " | Password is: " + passWord)
+                passWord = $('#passWord').val();
+                checkPassword();
+            }
+            function checkPassword()
+            {
+                if(passWord == "drivecomputing")
+                {
+                    document.location.href="page1.html";
+                }
+                else
+                {
+                    alert(errMsg);
+                }
             }
         </script>
         <style type="text/css">
@@ -33,14 +51,8 @@
                 text-align:center;
                 margin-top:150px;
             }
-            #userName
-            {
-                width:60%;
-                text-align:center;
-            }
             #passWord
             {
-                width:60%;
                 text-align:center;
             }
             #loginBtn
@@ -65,8 +77,7 @@
             <div id='content' data-role='content'>
                 <div id='label'>Please enter the requested details</div>
                 <hr style='width:80%;'>
-                <center><input type='text' id='userName' placeholder='Username...'></center>
-                <center><input type='text' id='passWord' placeholder='Password...'></center>
+                <center><input type='password' id='passWord' placeholder='Password...'></center>
                 <hr style='width:80%;'>
                 <center><a href='#' onClick='loginClicked();' data-role='button' data-mini='true' id='loginBtn'>Login</a></center>
             </div>
